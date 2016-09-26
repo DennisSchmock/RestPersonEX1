@@ -5,16 +5,24 @@
  */
 
 $(function () {
-    var rootURL = "http://localhost:8085/Rest1/api/quote/";
+    var rootURL = "http://localhost:7070/Rest1/api/quote/";
     loadQuote();
+     $("#addQuote").hide();
 
 
     $("#btnQuote").click(function () {
       loadQuote();
     });
-
     
-
+    $("#btnEdit").click(function(){
+       $("#viewQuote").hide();
+       $("#addQuote").show();
+       listQuotes();
+    });
+    
+    $("#btnAdd").click()(function(){
+        $
+    })
 
     function loadQuote() {
         console.log('load quote');
@@ -43,6 +51,10 @@ $(function () {
             $('#quote').text(quote.quote);
         });
 
+    }
+    
+    function listQuotes(){
+        //Add function to list all quotes
     }
     
 

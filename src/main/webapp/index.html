@@ -9,17 +9,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>        
-        <div class="container">
+        <div id="viewQuote" class="container">
+           
+                <div id="quote" class="alert alert-success">
 
-            <label id="quote" class="label-info">
-            </label>
 
-            <div class="header">
-                <input type="text" id="addQuote"/>
-                <button id="btnQuote">Get Random Quote</button>
-                <button id="btnAdd">New Quote</button>
+                </div>
+
+
+                <div class="form-group">
+                    <button id="btnQuote" class="btn">Get new random quote</button>
+                    <button id ="btnEdit" class="btn">Edit quotes</button>
+                </div>
+        </div>
+        
+        <div id="addQuote" class="container">
+            <div class="form-group">            
+
+                <label  for="addQuote">Add a quote</label><input class="form-control" type="text" id="addQuote"/>
             </div>
+            <div class="form-group">          
 
+                <button id="btnAdd" class="btn">Add new quote</button>
+            </div>  
         </div>
     </body>
 </html>
